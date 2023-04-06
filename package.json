@@ -1,0 +1,14 @@
+{
+  "name": "projeto_casaderacao",
+  "version": "1.0.0",
+  "description": "BackEnd de uma Casa de Ração.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rafael Marques da Silva",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
