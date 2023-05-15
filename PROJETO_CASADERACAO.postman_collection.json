@@ -1,0 +1,101 @@
+{
+	"info": {
+		"_postman_id": "65c13904-002f-4fde-a17d-5c3b4d608ad2",
+		"name": "PROJETO_CASADERACAO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26212246"
+	},
+	"item": [
+		{
+			"name": "clientes",
+			"item": [
+				{
+					"name": "selecionar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/clientes/selecionar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"clientes",
+								"selecionar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "inserir",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome_clientes\": \"Rafael\",\r\n    \"cpf_clientes\": \"11111111111\",\r\n    \"email_clientes\": \"marquesrafael3@hotmail.com\",\r\n    \"telefone_clientes\": \"11 111111111\",\r\n    \"nascimento_clientes\": \"11/11/1111\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/clientes/inserir",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"clientes",
+								"inserir"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "alterar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":1,\r\n    \"nome_clientes\": \"Rafael Marques\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/clientes/alterar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"clientes",
+								"alterar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "excluir",
+					"request": {
+						"method": "DELETE",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
